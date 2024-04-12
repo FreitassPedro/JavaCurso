@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package br.com.pedro.projetowebservicesspringjpahibernate.config;
 
 import java.util.Arrays;
@@ -26,18 +25,5 @@ public class TesteConfig implements CommandLineRunner {
         userRepository.saveAll(Arrays.asList(u1, u2));
 
     }
-
 }
-=======
-package br.com.pedro.projetowebservicesspringjpahibernate.config;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
-
-@Configuration
-@Profile("test")
-
-public class TesteConfig {
-    
-}
->>>>>>> 02c08f6f2a620c62e5edda1081d83e95ac45a170
