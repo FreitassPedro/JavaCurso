@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/19. Generics, Set, Map.iml" filepath="$PROJECT_DIR$/.idea/19. Generics, Set, Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula238/Aula238.iml" filepath="$PROJECT_DIR$/Aula238/Aula238.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula239/Aula239.iml" filepath="$PROJECT_DIR$/Aula239/Aula239.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula241/Aula241.iml" filepath="$PROJECT_DIR$/Aula241/Aula241.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula247Exercicio/Aula247Exercicio.iml" filepath="$PROJECT_DIR$/Aula247Exercicio/Aula247Exercicio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula249Exercicio/Aula249Exercicio.iml" filepath="$PROJECT_DIR$/Aula249Exercicio/Aula249Exercicio.iml" />
+    </modules>
+  </component>
+</project>

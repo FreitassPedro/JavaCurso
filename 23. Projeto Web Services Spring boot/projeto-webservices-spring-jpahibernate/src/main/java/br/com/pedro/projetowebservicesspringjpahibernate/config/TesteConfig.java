@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package br.com.pedro.projetowebservicesspringjpahibernate.config;
 
 import java.util.Arrays;
@@ -27,3 +28,16 @@ public class TesteConfig implements CommandLineRunner {
     }
 
 }
+=======
+package br.com.pedro.projetowebservicesspringjpahibernate.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+@Configuration
+@Profile("test")
+
+public class TesteConfig {
+    
+}
+>>>>>>> 02c08f6f2a620c62e5edda1081d83e95ac45a170
