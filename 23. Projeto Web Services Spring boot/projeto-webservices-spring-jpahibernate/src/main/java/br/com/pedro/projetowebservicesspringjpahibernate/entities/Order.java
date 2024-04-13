@@ -34,7 +34,7 @@ public class Order implements Serializable {
     /*
      * O order status que está recebendo é o Objeto OrderStaths,
      * mas precisamos armazenar o Inteiro. Então vamos converter
-     * através do getOrderStatus()
+     * através do setOrderStatus()
      * 
      * Conferir aula 305 -> 10min 
      */
