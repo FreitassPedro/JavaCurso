@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Profile;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.Category;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.Order;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.OrderItem;
+import br.com.pedro.projetowebservicesspringjpahibernate.entities.Payment;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.Product;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.User;
 import br.com.pedro.projetowebservicesspringjpahibernate.entities.enums.OrderStatus;
@@ -82,6 +83,10 @@ public class TesteConfig implements CommandLineRunner {
 
         orderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
 
+        Payment pay1 = new Payment(null, Instant.parse("2019-06-20T21:53:07Z"), o1);
+        o1.setPayment(pay1);
+
+        orderRepository.save(o1);
 
 
 
