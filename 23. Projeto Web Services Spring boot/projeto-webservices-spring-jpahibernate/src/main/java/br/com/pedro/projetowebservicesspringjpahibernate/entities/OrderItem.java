@@ -9,20 +9,19 @@ import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_order_item")
-public class OrderItem implements Serializable  {
+public class OrderItem implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    
     @EmbeddedId
     private OrderItemPK idOrderItemPK = new OrderItemPK();
 
     private Integer quantity;
     private Double price;
-    
-    public OrderItem() {}
+
+    public OrderItem() {
+    }
 
     public OrderItem(Order order, Product product, Integer quantity) {
         super();
@@ -33,14 +32,15 @@ public class OrderItem implements Serializable  {
     }
 
     @JsonIgnore
-	public Order getOrder() {
-		return idOrderItemPK.getOrder();
-	}
+    public Order getOrder() {
+        return idOrderItemPK.getOrder();
+    }
+
     public void setOrder(Order order) {
         idOrderItemPK.setOrder(order);
     }
 
-    public Product getProduct () {
+    public Product getProduct() {
         return idOrderItemPK.getProduct();
     }
 
@@ -87,5 +87,5 @@ public class OrderItem implements Serializable  {
         } else if (!idOrderItemPK.equals(other.idOrderItemPK))
             return false;
         return true;
-    }    
+    }
 }
